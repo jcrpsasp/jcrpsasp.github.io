@@ -1,24 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<title>Computer Aided Dispatch | San Andreas State Police</title>
+<title>Concealed Carry License Search | San Andreas State Police</title>
 <link rel="shortcut icon" sizes="16x16" href="images/favicon.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <style type="text/css">
-.auto-style1 {
-	font-size: large;
-}
 .auto-style2 {
 	background-color: #06213F;
-}
-.auto-style3 {
-	font-size: x-large;
-	color: #706A6A;
-}
-.auto-style4 {
-	color: #FF0000;
 }
 .auto-style5 {
 	display: inline-block;
@@ -35,6 +25,11 @@
 .auto-style6 {
 	margin-bottom: 15px;
 	margin-left: 61;
+}
+
+.auto-style7 {
+	text-align: center;
+	font-size: large;
 }
 
 </style>
@@ -113,63 +108,33 @@
     <main class="container clear"> 
       <!-- main body --> 
       <!-- ################################################################################################ -->
-      <h1>Computer Aided Dispatch</h1>
-    </main>
-    <div class="cad">
-    <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSeQS1FUJWvE5ianP_HoVU-jWn7RDiRe8Z0Z8u-uUDMMchBuHA/formResponse">
-    	<h6 class="auto-style1" style="height: 4px"><strong>Unit Number and Name<span class="auto-style4">*</span></strong></h6>
-    	<p style="height: 12px">5E-000 | Example (PLEASE STATE BOTH UNIT NUMBERS IF ON 10-12 RIDE ALONG)</p>
-		<input name="entry.1851268726" type="text" style="width: 429px" />	
-		<br>
-		<h6 class="auto-style1" style="height: 12px"><strong>Status<span class="auto-style4">*</span></strong></h6>
-		<select name="entry.1472021729">
-				<option selected disabled>Choose</option>
-				<option value="10-41 (START AVAILABLE)">10-41 (START AVAILABLE)</option>
-				<option value="10-42 (END OF DUTY)">10-42 (END OF DUTY)</option>
-				<option value="10-8 (AVAILABLE)">10-8 (AVAILABLE)</option>
-				<option value="10-97 (EN ROUTE)">10-97 (EN ROUTE)</option>
-				<option value="10-23 (ON SCENE)">10-23 (ON SCENE)</option>
-				<option value="10-15 (EN ROUTE TO STATION)">10-15 (EN ROUTE TO STATION)</option>
-				<option value="10-11 (Traffic Stop)">10-11 (Traffic Stop)</option>
-				<option value="10-65 (ESCORTING PRISONER)">10-65 (ESCORTING PRISONER)</option>
-				<option value="SIGNAL - 11 (RADAR)">SIGNAL - 11 (RADAR)</option>
-				<option value="10-5 (MEAL BREAK)">10-5 (MEAL BREAK)</option>
-				<option value="10-6 (BUSY)">10-6 (BUSY)</option>
-				<option value="10-12 (RIDE ALONG)">10-12 (RIDE ALONG)</option>
-				<option value="CODE 0 (GAME CRASH)">CODE 0 (GAME CRASH)</option>
-			</select>
-			<br />
-			<hr style="height: 20px" />
-		<h1 class="auto-style3" style="height: 28px"><strong>Pertaining to Traffic Stop</strong></h1>
-    	<h6 class="auto-style1" style="height: 4px"><strong>Location</strong></h6>
-    	<p style="height: 12px">Please be detailed (Ex: JOSHUA ROAD EAST OF MARINA DRIVE)</p>
-		<input name="entry.1708461467" type="text" style="width: 429px" />
-    	<br>
-		<h6 class="auto-style1" style="height: 4px"><strong>Vehicle</strong></h6>
-    	<p style="height: 12px">Model and Color</p>
-		<input name="entry.1561869715" type="text" style="width: 429px" />
-		<br />
-		<h6 class="auto-style1" style="height: 12px"><strong>Reason for Stop</strong></h6>
-		<input name="entry.1734227214" type="text" style="width: 429px" />
-		<br />
-		<hr style="height: 20px" />
-		<h1 class="auto-style3" style="height: 28px"><strong>Relay to Dispatch</strong></h1>
-		<h6 class="auto-style1" style="height: 4px"><strong>Run ID</strong></h6>
-    	<p style="height: 12px">Provide both First and Last Name</p>
-		<input name="entry.444482140" type="text" style="width: 429px" />
-		<br />
-		<h6 class="auto-style1" style="height: 4px"><strong>Run Plate</strong></h6>
-    	<p style="height: 12px">Provide full Liscense Plate</p>
-		<input name="entry.342691234" type="text" style="width: 429px" />
-		<br />
-		<h6 class="auto-style1" style="height: 4px"><strong>B.O.L.O. </strong>(<strong>B</strong>e <strong>O</strong>n the <strong>L</strong>ook<strong>O</strong>ut)</h6>
-    	<p style="height: 12px">Please write ALL known information regarding B.O.L.O.</p>
-		<input name="entry.823410332" type="text" style="width: 429px" />
-		<br />
-		<br />
-		<input name="Submit" type="submit" value="Submit" />
-    </form>
-    </div>
+	 </main>    
+	 <h1 class="auto-style7" style="height: 3px"><strong>CCW LICENSE SEARCH</strong></h1>
+	 
+	 <hr />
+<form>
+  	<table style="width: 45%; height: 121px;" align="center">
+		<tr>
+			<td style= "width: 41%; height: 39px;" class="right">Last Name</td>
+			<td style= "width: 30%; height: 39px;">
+			<input name="lastname" type="text" style="width: 297px"/>
+			</td>
+		</tr>
+		<tr>
+			<td style= "width: 41%" class="right">Date Of Birth</td>
+			<td style= "width: 30%">
+			<input name="dob" type="date"/>
+			</td>
+		</tr>
+		<tr>
+			<td style= "width: 41%" class="right">CCW #</td>
+			<td style= "width: 30%">
+			<input name="ccw" type="text" style="width: 297px" /> 
+			</td>
+		</tr>
+	  </table>
+	<input name="Search" type="submit" value="Search" style="margin-left:50%"/>
+</form>
   </div>
 </div>
 <!-- ################################################################################################ --> 
