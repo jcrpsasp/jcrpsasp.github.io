@@ -1,14 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<title>Concealed Carry License Search | San Andreas State Police</title>
+<title>Log Filer | San Andreas State Police</title>
 <link rel="shortcut icon" sizes="16x16" href="images/favicon.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <style type="text/css">
+.auto-style1 {
+	font-size: large;
+}
 .auto-style2 {
 	background-color: #06213F;
+}
+.auto-style4 {
+	color: #FF0000;
 }
 .auto-style5 {
 	display: inline-block;
@@ -25,17 +31,6 @@
 .auto-style6 {
 	margin-bottom: 15px;
 	margin-left: 61;
-}
-
-.auto-style7 {
-	text-align: center;
-	font-size: large;
-}
-
-.auto-style8 {
-	text-align: center;
-	font-size: xx-large;
-	color: #06213F;
 }
 
 </style>
@@ -114,42 +109,25 @@
     <main class="container clear"> 
       <!-- main body --> 
       <!-- ################################################################################################ -->
-	 </main>    
-	 <h1 class="auto-style7" style="height: 3px"><strong>CCW LICENSE SEARCH</strong></h1>
-	 
-	 <hr />
-<form>
-  	<table style="width: 45%; height: 121px;" align="center">
-		<tr>
-			<td style= "width: 41%; height: 39px;" class="right">Last Name</td>
-			<td style= "width: 30%; height: 39px;">
-			<input name="lastname" type="text" style="width: 297px"/>
-			</td>
-		</tr>
-		<tr>
-			<td style= "width: 41%" class="right">Date Of Birth</td>
-			<td style= "width: 30%">
-			<input name="dob" type="date"/>
-			</td>
-		</tr>
-		<tr>
-			<td style= "width: 41%" class="right">CCW #</td>
-			<td style= "width: 30%">
-			<input name="ccw" type="text" style="width: 297px"/> 
-			</td>
-		</tr>
-	  </table>
-	<input name="Search" type="submit" value="Search" style="margin-left:47%" onclick="newState(); return false" />
-	<script src="layout/scripts/cclsearch.js"></script>
-	<br />
-	<br />
-</form>
-		 <h1 class="auto-style7" style="height: 3px"><strong>RESULTS</strong></h1>
-	<hr>		 
-	<br />
-  	  <div id="stateDisplay" style="height: 85px" class="auto-style8">
-	  </div>
-	
+      <h1>Log Filer</h1>
+    </main>
+    <div class="cad">
+    <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSfUvcnEp-KjBmfiPUxM5F8I2XGFnaAfPT9EFslTP_PV6nhmGw/formResponse">
+    	<h6 class="auto-style1" style="height: 4px"><strong>Unit Number and Name<span class="auto-style4">*</span></strong></h6>
+    	<p style="height: 12px">5E-000 | Example</p>
+		<input name="entry.1056734987" type="text" style="width: 429px" />	
+		<br>
+    	<h6 class="auto-style1" style="height: 4px"><strong>Shift Status<span class="auto-style4">*</span></strong></h6>
+    	<select name="entry.2008696278">
+				<option selected disabled>Choose</option>
+				<option>Start Shift</option>
+				<option>End Shift</option>
+			</select>
+			<br />
+			<br />
+		<input name="Submit" type="submit" value="Submit"/>
+    </form>
+    </div>
   </div>
 </div>
 <!-- ################################################################################################ --> 
